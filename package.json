@@ -1,0 +1,20 @@
+{
+  "name": "nexus-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NEXUS — AI-powered Personal Operating System",
+  "packageManager": "pnpm@12.18.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter=@nexus/web",
+    "dev:mobile": "turbo run dev --filter=@nexus/mobile",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.4",
+    "typescript": "^5.7.3"
+  }
+}
