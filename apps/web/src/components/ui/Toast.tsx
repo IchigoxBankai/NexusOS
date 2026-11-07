@@ -11,15 +11,19 @@ export interface ToastItem {
 
 interface ToastStore {
   toasts: ToastItem[];
-  addToast: (toast: Omit<ToastItem, 'id'>) => void;
+  addToast: (toastOrTitle: Omit<ToastItem, 'id'> | string, type?: 'success' | 'error' | 'info') => void;
   removeToast: (id: string) => void;
 }
 
 export const useToastStore = create<ToastStore>((set) => ({
   toasts: [],
-  addToast: (toast) => {
+  addToast: (toastOrTitle, maybeType = 'info') => {
     const id = Math.random().toString(36).substring(2, 9);
-    set((state) => ({ toasts: [...state.toasts, { ...toast, id }] }));
+    const toastData: Omit<ToastItem, 'id'> =
+      typeof toastOrTitle === 'string'
+        ? { title: toastOrTitle, type: maybeType }
+        : toastOrTitle;
+    set((state) => ({ toasts: [...state.toasts, { ...toastData, id }] }));
     setTimeout(() => {
       set((state) => ({ toasts: state.toasts.filter((t) => t.id !== id) }));
     }, 4000);

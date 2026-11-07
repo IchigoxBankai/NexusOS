@@ -1,1 +1,1 @@
-{"root":["./src/auth.ts","./src/dashboard.ts","./src/database.ts","./src/index.ts","./src/navigation.ts","./src/profile.ts","./src/projects.ts","./src/tasks.ts"],"version":"5.9.3"}
+{"root":["./src/assistant.ts","./src/auth.ts","./src/calendar.ts","./src/dashboard.ts","./src/database.ts","./src/finance.ts","./src/goals.ts","./src/habits.ts","./src/index.ts","./src/insights.ts","./src/navigation.ts","./src/notes.ts","./src/profile.ts","./src/projects.ts","./src/tasks.ts"],"version":"5.9.3"}

@@ -14,8 +14,8 @@ export const NEXUS_NAV_ITEMS: NexusNavigationItem[] = [
     label: 'Tasks',
     path: '/tasks',
     iconName: 'CheckSquare',
-    badge: '3',
-    isPlanned: true,
+    badge: '5',
+    isPlanned: false,
     description: 'Personal task queues, priorities, and workflow pipelines.',
   },
   {
@@ -23,7 +23,8 @@ export const NEXUS_NAV_ITEMS: NexusNavigationItem[] = [
     label: 'Projects',
     path: '/projects',
     iconName: 'Briefcase',
-    isPlanned: true,
+    badge: '3',
+    isPlanned: false,
     description: 'High-level initiatives, milestones, and deliverables.',
   },
   {
@@ -31,7 +32,7 @@ export const NEXUS_NAV_ITEMS: NexusNavigationItem[] = [
     label: 'Calendar',
     path: '/calendar',
     iconName: 'Calendar',
-    isPlanned: true,
+    isPlanned: false,
     description: 'Intelligent schedule orchestration and time-blocking.',
   },
   {
@@ -39,7 +40,7 @@ export const NEXUS_NAV_ITEMS: NexusNavigationItem[] = [
     label: 'Notes & Vault',
     path: '/notes',
     iconName: 'FileText',
-    isPlanned: true,
+    isPlanned: false,
     description: 'Personal knowledge vault, networked notes, and documentation.',
   },
   {
@@ -47,7 +48,7 @@ export const NEXUS_NAV_ITEMS: NexusNavigationItem[] = [
     label: 'Habits',
     path: '/habits',
     iconName: 'Repeat',
-    isPlanned: true,
+    isPlanned: false,
     description: 'Routines, habit tracking, and streak analytics.',
   },
   {
@@ -55,7 +56,7 @@ export const NEXUS_NAV_ITEMS: NexusNavigationItem[] = [
     label: 'Goals',
     path: '/goals',
     iconName: 'Target',
-    isPlanned: true,
+    isPlanned: false,
     description: 'Long-term milestones, OKRs, and life horizons.',
   },
   {
@@ -63,7 +64,7 @@ export const NEXUS_NAV_ITEMS: NexusNavigationItem[] = [
     label: 'Finance',
     path: '/finance',
     iconName: 'CreditCard',
-    isPlanned: true,
+    isPlanned: false,
     description: 'Accounts, budgets, net worth tracking, and cash flow.',
   },
   {
@@ -71,8 +72,8 @@ export const NEXUS_NAV_ITEMS: NexusNavigationItem[] = [
     label: 'NEXUS AI',
     path: '/assistant',
     iconName: 'Sparkles',
-    badge: 'Pro',
-    isPlanned: true,
+    badge: 'Copilot',
+    isPlanned: false,
     description: 'Autonomous personal copilot and proactive life assistant.',
   },
   {
@@ -80,7 +81,7 @@ export const NEXUS_NAV_ITEMS: NexusNavigationItem[] = [
     label: 'Insights',
     path: '/insights',
     iconName: 'BarChart2',
-    isPlanned: true,
+    isPlanned: false,
     description: 'Cross-module analytics, focus metrics, and productivity trends.',
   },
 ];
@@ -103,4 +104,3 @@ export const NEXUS_SECONDARY_NAV_ITEMS: NexusNavigationItem[] = [
     description: 'User details, timezone, and security credentials.',
   },
 ];
-

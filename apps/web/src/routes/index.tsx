@@ -7,17 +7,15 @@ import { ForgotPasswordPage } from '@/features/auth/ForgotPasswordPage';
 import { ProfilePage } from '@/features/auth/ProfilePage';
 import { SettingsPage } from '@/features/auth/SettingsPage';
 import { CommandCenter } from '@/features/dashboard/CommandCenter';
-import {
-  TasksPage,
-  ProjectsPage,
-  CalendarPage,
-  NotesPage,
-  HabitsPage,
-  GoalsPage,
-  FinancePage,
-  AssistantPage,
-  InsightsPage,
-} from '@/features/placeholders';
+import { TasksView } from '@/features/tasks/TasksView';
+import { ProjectsView } from '@/features/projects/ProjectsView';
+import { CalendarView } from '@/features/calendar/CalendarView';
+import { NotesView } from '@/features/notes/NotesView';
+import { HabitsView } from '@/features/habits/HabitsView';
+import { GoalsView } from '@/features/goals/GoalsView';
+import { FinanceView } from '@/features/finance/FinanceView';
+import { AssistantView } from '@/features/assistant/AssistantView';
+import { InsightsView } from '@/features/insights/InsightsView';
 
 export const router: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
   // Public Auth Routes
@@ -51,39 +49,39 @@ export const router: ReturnType<typeof createBrowserRouter> = createBrowserRoute
           },
           {
             path: '/tasks',
-            element: <TasksPage />,
+            element: <TasksView />,
           },
           {
             path: '/projects',
-            element: <ProjectsPage />,
+            element: <ProjectsView />,
           },
           {
             path: '/calendar',
-            element: <CalendarPage />,
+            element: <CalendarView />,
           },
           {
             path: '/notes',
-            element: <NotesPage />,
+            element: <NotesView />,
           },
           {
             path: '/habits',
-            element: <HabitsPage />,
+            element: <HabitsView />,
           },
           {
             path: '/goals',
-            element: <GoalsPage />,
+            element: <GoalsView />,
           },
           {
             path: '/finance',
-            element: <FinancePage />,
+            element: <FinanceView />,
           },
           {
             path: '/assistant',
-            element: <AssistantPage />,
+            element: <AssistantView />,
           },
           {
             path: '/insights',
-            element: <InsightsPage />,
+            element: <InsightsView />,
           },
           {
             path: '/profile',
