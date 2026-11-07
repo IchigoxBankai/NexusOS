@@ -162,3 +162,4 @@ export function ForYouCard({ items: initialItems }: ForYouCardProps) {
     </Card>
   );
 }
+

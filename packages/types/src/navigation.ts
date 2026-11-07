@@ -26,3 +26,4 @@ export interface NavigationSection {
   title?: string;
   items: NexusNavigationItem[];
 }
+

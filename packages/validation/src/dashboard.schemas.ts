@@ -7,3 +7,4 @@ export const quickTaskSchema = z.object({
 });
 
 export type QuickTaskInput = z.infer<typeof quickTaskSchema>;
+

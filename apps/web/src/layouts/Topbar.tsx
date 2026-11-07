@@ -178,3 +178,4 @@ export function Topbar({ onOpenCommandPalette, onToggleMobileNav }: TopbarProps)
     </header>
   );
 }
+

@@ -114,3 +114,4 @@ export function HabitsCard({ habits: initialHabits }: HabitsCardProps) {
     </Card>
   );
 }
+

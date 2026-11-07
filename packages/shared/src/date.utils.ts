@@ -19,3 +19,4 @@ export function getGreetingForHour(hour: number = new Date().getHours()): string
   if (hour < 17) return 'Good afternoon';
   return 'Good evening';
 }
+

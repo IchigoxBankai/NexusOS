@@ -227,3 +227,4 @@ pnpm run build
 - **Stage 2:** Tasks & Projects Engine (Kanban, matrices, milestones, cross-app bidirectional sync).
 - **Stage 3:** Smart Calendar & Knowledge Vault (Time-blocking, markdown wiki, vector semantic search).
 - **Stage 4:** Habits, Personal Finance, and NEXUS AI Copilot (Autonomous tool-calling agents).
+

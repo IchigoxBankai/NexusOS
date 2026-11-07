@@ -13,3 +13,4 @@ DO $$
 BEGIN
   RAISE NOTICE 'NEXUS Database Seed initialized successfully. RLS and Triggers are active.';
 END $$;
+

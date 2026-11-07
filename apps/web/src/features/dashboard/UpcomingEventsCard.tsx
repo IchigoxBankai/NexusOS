@@ -100,3 +100,4 @@ export function UpcomingEventsCard({ events }: UpcomingEventsCardProps) {
     </Card>
   );
 }
+

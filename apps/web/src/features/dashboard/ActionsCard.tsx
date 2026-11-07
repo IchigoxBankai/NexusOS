@@ -185,3 +185,4 @@ export function ActionsCard({ actions: initialActions, onOpenCreateTask }: Actio
     </Card>
   );
 }
+

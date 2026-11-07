@@ -184,3 +184,4 @@ export function Sidebar({ className }: SidebarProps) {
     </aside>
   );
 }
+

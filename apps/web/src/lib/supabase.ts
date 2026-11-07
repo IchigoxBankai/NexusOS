@@ -13,3 +13,4 @@ export const supabase: NexusSupabaseClient = createNexusClient({
   supabaseUrl,
   supabaseAnonKey,
 });
+

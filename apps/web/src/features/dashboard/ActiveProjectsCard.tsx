@@ -87,3 +87,4 @@ export function ActiveProjectsCard({ projects }: ActiveProjectsCardProps) {
     </Card>
   );
 }
+

@@ -39,3 +39,4 @@ export function createNexusClient(config: SupabaseClientConfig): NexusSupabaseCl
     },
   });
 }
+

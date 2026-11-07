@@ -24,3 +24,4 @@ export function formatSupabaseError(error: unknown): NexusApiError {
     message: String(error),
   };
 }
+

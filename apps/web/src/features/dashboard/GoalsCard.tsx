@@ -82,3 +82,4 @@ export function GoalsCard({ goals }: GoalsCardProps) {
     </Card>
   );
 }
+

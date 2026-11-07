@@ -17,3 +17,4 @@ export const supabase: NexusSupabaseClient = createNexusClient({
   persistSession: true,
   autoRefreshToken: true,
 });
+

@@ -65,3 +65,4 @@ export function DailyOverview({ stats }: DailyOverviewProps) {
     </div>
   );
 }
+

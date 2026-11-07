@@ -21,3 +21,4 @@ export function WelcomeBanner({ greeting }: WelcomeBannerProps) {
     </div>
   );
 }
+

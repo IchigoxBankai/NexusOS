@@ -111,3 +111,4 @@ export class NexusAuthService {
     return this.client.auth.onAuthStateChange(callback);
   }
 }
+

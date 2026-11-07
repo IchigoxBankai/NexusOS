@@ -144,3 +144,4 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
     </AnimatePresence>
   );
 }
+

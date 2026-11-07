@@ -37,3 +37,4 @@ export const userPreferencesSchema = z.object({
 });
 
 export type UserPreferencesInput = z.infer<typeof userPreferencesSchema>;
+
