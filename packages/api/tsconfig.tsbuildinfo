@@ -1,1 +1,1 @@
-{"root":["./src/auth.service.ts","./src/client.ts","./src/dashboard.sample.ts","./src/dashboard.service.ts","./src/errors.ts","./src/index.ts","./src/keys.ts","./src/profile.service.ts"],"version":"5.9.3"}
+{"root":["./src/auth.service.ts","./src/client.ts","./src/dashboard.sample.ts","./src/dashboard.service.ts","./src/diagnostics.ts","./src/errors.ts","./src/hooks.ts","./src/index.ts","./src/keys.ts","./src/profile.service.ts"],"version":"5.9.3"}

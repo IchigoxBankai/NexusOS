@@ -12,7 +12,8 @@
   "dependencies": {
     "@nexus/types": "workspace:*",
     "@nexus/validation": "workspace:*",
-    "@supabase/supabase-js": "^2.49.1"
+    "@supabase/supabase-js": "^2.49.1",
+    "@tanstack/react-query": "^5.66.0"
   },
   "devDependencies": {
     "@nexus/config": "workspace:*",
