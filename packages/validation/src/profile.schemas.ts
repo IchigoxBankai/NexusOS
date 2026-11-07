@@ -6,7 +6,7 @@ export const updateProfileSchema = z.object({
     .min(1, 'Full name cannot be empty')
     .max(100, 'Name must not exceed 100 characters')
     .optional(),
-  avatar_url: z.string().url('Invalid URL').nullable().optional(),
+  avatar_url: z.string().nullable().optional(),
   timezone: z.string().min(1, 'Timezone is required').optional(),
 });
 
