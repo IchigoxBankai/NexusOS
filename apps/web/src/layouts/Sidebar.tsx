@@ -19,6 +19,7 @@ import {
   Layers,
 } from 'lucide-react';
 import { NEXUS_NAV_ITEMS, NEXUS_SECONDARY_NAV_ITEMS } from '@nexus/shared';
+import type { NexusNavigationItem } from '@nexus/types';
 import { cn } from '@/lib/utils';
 
 const iconMap: Record<string, React.ElementType> = {
@@ -91,7 +92,7 @@ export function Sidebar({ className }: SidebarProps) {
           )}
         </div>
 
-        {NEXUS_NAV_ITEMS.map((item) => {
+        {NEXUS_NAV_ITEMS.map((item: NexusNavigationItem) => {
           const Icon = iconMap[item.iconName] || LayoutGrid;
 
           return (
@@ -145,7 +146,7 @@ export function Sidebar({ className }: SidebarProps) {
 
       {/* Secondary Navigation (Settings & Profile) */}
       <div className="p-3 border-t border-slate-100/70 space-y-1">
-        {NEXUS_SECONDARY_NAV_ITEMS.map((item) => {
+        {NEXUS_SECONDARY_NAV_ITEMS.map((item: NexusNavigationItem) => {
           const Icon = iconMap[item.iconName] || Settings;
 
           return (

@@ -136,7 +136,7 @@ export function NotesView() {
     const matchesSearch =
       n.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       n.content.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      n.tags.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase()));
+      n.tags.some((t: string) => t.toLowerCase().includes(searchQuery.toLowerCase()));
     return matchesFolder && matchesSearch;
   });
 
@@ -313,7 +313,7 @@ export function NotesView() {
 
                 {/* Tags row */}
                 <div className="flex flex-wrap items-center gap-1.5 mb-5">
-                  {activeNote.tags.map((tag) => (
+                  {activeNote.tags.map((tag: string) => (
                     <span
                       key={tag}
                       className="inline-flex items-center gap-1 text-[10px] font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600"

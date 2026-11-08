@@ -48,7 +48,7 @@ export function InsightsView() {
   const handleSynthesize = () => {
     setIsSynthesizing(true);
     setTimeout(() => {
-      setData((prev) => ({
+      setData((prev: ProductivityInsightsData) => ({
         ...prev,
         deepWorkHoursThisWeek: +(prev.deepWorkHoursThisWeek + 1.2).toFixed(1),
         executiveSummary: `Updated Telemetry Synthesis: Cognitive stamina remains in the 92nd percentile. Deep focus allocations for core architecture have exceeded weekly baselines. Recommendations: maintain Friday afternoon buffer to prevent weekend cognitive carryover.`,
@@ -202,7 +202,7 @@ export function InsightsView() {
 
         {/* Bar Chart Visualization */}
         <div className="grid grid-cols-7 gap-2 md:gap-6 pt-6 pb-2 items-end min-h-[220px]">
-          {data.dailyMetrics.map((day) => {
+          {data.dailyMetrics.map((day: DailyFocusMetric) => {
             const focusHours = (day.focusMinutes / 60).toFixed(1);
             const meetingHours = (day.meetingMinutes / 60).toFixed(1);
             const focusHeight = Math.min(180, (day.focusMinutes / 400) * 180);

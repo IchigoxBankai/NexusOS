@@ -17,6 +17,7 @@ import {
   User,
 } from 'lucide-react';
 import { NEXUS_NAV_ITEMS, NEXUS_SECONDARY_NAV_ITEMS } from '@nexus/shared';
+import type { NexusNavigationItem } from '@nexus/types';
 import { cn } from '@/lib/utils';
 
 const iconMap: Record<string, React.ElementType> = {
@@ -84,7 +85,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
               <div className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider px-2 pb-2">
                 Modules
               </div>
-              {NEXUS_NAV_ITEMS.map((item) => {
+              {NEXUS_NAV_ITEMS.map((item: NexusNavigationItem) => {
                 const Icon = iconMap[item.iconName] || LayoutGrid;
 
                 return (
@@ -115,7 +116,7 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
               <div className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider px-2 pt-4 pb-2">
                 System
               </div>
-              {NEXUS_SECONDARY_NAV_ITEMS.map((item) => {
+              {NEXUS_SECONDARY_NAV_ITEMS.map((item: NexusNavigationItem) => {
                 const Icon = iconMap[item.iconName] || Settings;
 
                 return (

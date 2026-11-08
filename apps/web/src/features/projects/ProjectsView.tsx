@@ -18,7 +18,7 @@ import { Input } from '@/components/ui/Input';
 import { Dialog } from '@/components/ui/Dialog';
 import { useToastStore } from '@/components/ui/Toast';
 import { cn } from '@/lib/utils';
-import type { ProjectStatus, ProjectWithStats } from '@nexus/types';
+import type { ProjectStatus, ProjectWithStats, ProjectMilestone } from '@nexus/types';
 
 const INITIAL_PROJECTS: ProjectWithStats[] = [
   {
@@ -146,10 +146,10 @@ export function ProjectsView() {
     setProjects((prev) =>
       prev.map((p) => {
         if (p.id !== projectId || !p.milestones) return p;
-        const updatedMilestones = p.milestones.map((m) =>
+        const updatedMilestones = p.milestones.map((m: ProjectMilestone) =>
           m.id === milestoneId ? { ...m, is_completed: !m.is_completed } : m
         );
-        const completedCount = updatedMilestones.filter((m) => m.is_completed).length;
+        const completedCount = updatedMilestones.filter((m: ProjectMilestone) => m.is_completed).length;
         const progress = Math.round((completedCount / updatedMilestones.length) * 100);
 
         return {
@@ -296,7 +296,7 @@ export function ProjectsView() {
                     <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">
                       Milestones
                     </span>
-                    {proj.milestones.map((m) => (
+                    {proj.milestones.map((m: ProjectMilestone) => (
                       <div
                         key={m.id}
                         onClick={() => handleToggleMilestone(proj.id, m.id)}
