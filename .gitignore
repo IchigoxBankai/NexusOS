@@ -22,6 +22,9 @@ web-build/
 # Turborepo
 .turbo
 
+# Vercel
+.vercel
+
 # Environment variables
 .env
 .env.local
